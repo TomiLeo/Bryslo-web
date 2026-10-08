@@ -589,8 +589,8 @@ export default function Home() {
                 ) : (
                   <form onSubmit={handleFormSubmit} className="space-y-6">
                     <input type="hidden" name="access_key" value="00e07a8f-0d3b-4fa6-a47f-474325c64751" />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="min-w-0">
                         <label className="block text-xs font-medium text-[#a1a1aa] mb-2">
                           Jméno a příjmení *
                         </label>
@@ -603,7 +603,7 @@ export default function Home() {
                         />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <label className="block text-xs font-medium text-[#a1a1aa] mb-2">
                           E-mail *
                         </label>
@@ -635,9 +635,9 @@ export default function Home() {
                       <label className="block text-xs font-medium text-[#a1a1aa] mb-2">
                         Telefonní číslo *
                       </label>
-                      <div className="flex gap-2">
+                      <div className="flex w-full min-w-0 gap-2">
                         {/* Selector */}
-                        <div className="relative">
+                        <div className="relative shrink-0">
                           <button
                             type="button"
                             onClick={() => setCountryDropdownOpen(!countryDropdownOpen)}
@@ -674,7 +674,7 @@ export default function Home() {
                           name="phone"
                           type="tel"
                           placeholder="777 123 456"
-                          className="flex-1 rounded-xl border border-[#27272a] bg-[#18181b] px-4 py-3 text-sm text-white placeholder-[#71717a] focus:border-[#e11d48] focus:outline-none focus:ring-1 focus:ring-[#e11d48]"
+                          className="box-border w-full min-w-0 max-w-full flex-1 rounded-xl border border-[#27272a] bg-[#18181b] px-4 py-3 text-sm text-white placeholder-[#71717a] focus:border-[#e11d48] focus:outline-none focus:ring-1 focus:ring-[#e11d48]"
                         />
                       </div>
                     </div>
