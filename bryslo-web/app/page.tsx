@@ -36,6 +36,16 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    id: "technologicky-playground",
+    title: "Technologický Playground & Integrace",
+    category: "Bonusové funkce",
+    description: "Interaktivní testovací web demonstrující pokročilé funkce: Google Mapy, dynamické napojení na Google Sheets, rezervační kalendář, Lightbox fotogalerie a přepínání Dark/Light módu.",
+    tags: ["Bonusové funkce"],
+    image: "/Bryslo_Playground.png",
+    gallery: ["/Bryslo_Playground.png"],
+    liveUrl: "https://bryslo-integrations-playground.vercel.app/",
+  },
+  {
     id: "apex-automation",
     title: "Apex Automation – Robotické systémy",
     category: "Automatizace",
